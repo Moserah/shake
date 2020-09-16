@@ -1,0 +1,40 @@
+*{
+    color: white !important;
+}
+header{
+    background-image: url(../img/b7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.card-title, .card-text{
+    color: #6E7697;
+    font-size: 17px;
+}
+.card-text a{
+    color: #5162AB;
+}
+.card-text .x, .color{
+    font-size: 12px;
+    color: #FF7B2E
+}
+.card-text .z{
+    color: #495CA8;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-left: 55px;
+}
+.card-img-top{
+    width: 100% !important;
+    margin: auto;
+}
+.card{
+    border: none !important;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.13);
+}
+.carousel-inner{
+    width: 81% !important;
+    margin: 5px auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.13);
+}

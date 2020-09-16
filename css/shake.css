@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.507);
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 7px;
+}
+
+nav ul li a {
+    color: white !important;
+    font-size: 17px;
+    padding: 7px 13px;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: linear-gradient(-135deg, #50c878, #92d041);
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#home {
+    display: flex;
+    width: 100%;
+}
+
+header {
+    height: 110vh;
+}
+
+.title-img {
+    width: 35%;
+    height: 52vh;
+    margin: 200px 0px 100px 130px;
+}
+
+.title-image {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.title-text {
+    margin: 330px 0px 0px -290px;
+    text-align: right;
+}
+
+.title-text-1 {
+    color: white;
+    font-size: 50px;
+    animation-name: runthrough;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.title-text-1 span {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.719);
+    color: black;
+}
+
+.title-text-2 {
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.719);
+    padding-bottom: 60px;
+}
+
+.title-button {
+    width: 23%;
+    height: 7vh;
+    border-radius: 25px;
+    background: linear-gradient(-135deg, #50c878, #92d041);
+    cursor: pointer;
+    border-style: none;
+    animation-name: button;
+    animation-duration: 0.8s;
+}
+
+.title-button a {
+    color: white;
+}
+
+.title-button:hover {
+    background: #332C33;
+}
+
+@keyframes runthrough {
+    0% {
+        color: #84CA33;
+    }
+    30% {
+        color: rgb(55, 102, 1)
+    }
+    50% {
+        color: rgb(66, 99, 28)
+    }
+    70% {
+        color: rgb(55, 102, 1)
+    }
+    100% {
+        color: #84CA33
+    }
+}
+
+@keyframes button {
+    0% {
+        width: 0%
+    }
+    10% {
+        width: 2.3
+    }
+    20% {
+        width: 4.6%
+    }
+    30% {
+        width: 6.9%
+    }
+    40% {
+        width: 9.2%
+    }
+    50% {
+        width: 11.5%
+    }
+    60% {
+        width: 13.8%
+    }
+    70% {
+        width: 16.1%
+    }
+    80% {
+        width: 18.4%
+    }
+    90% {
+        width: 20.7%
+    }
+    100% {
+        width: 23%
+    }
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+/* about us */
+
+#about-wrapper {
+    display: flex;
+    margin: 90px 0px auto;
+    justify-content: space-evenly;
+    background: rgba(230, 248, 199, 0.637);
+    height: 600px;
+    padding: 70px 0px 0px 0px;
+}
+
+#about-wrapper .about-box {
+    width: 500px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#about-wrapper .about-box .about-front-face {
+    height: 420px;
+    width: 100%;
+    box-shadow: 0px 5px 20px 0px rgba(9, 10, 12, 0.959);
+    transition: all 1.2s ease;
+    padding: 30px;
+    background: linear-gradient(-135deg, #666C65, #048331)
+}
+
+.about-box .about-back-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgb(165, 167, 165), #048331);
+    box-shadow: 0px 5px 20px 0px rgba(9, 10, 12, 0.959);
+    z-index: 1;
+    height: 420px;
+    width: 100%;
+    padding: 30px;
+    opacity: 0;
+    transform-style: preserve-3d;
+    /* backface-visibility: hidden; */
+    transform: translateY(200px) rotateX(-125deg);
+    transition: all 1.2s ease;
+}
+
+.about-box:hover .about-back-face {
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+.about-box:hover .about-front-face {
+    transform: translateY(-200px) rotateX(125deg);
+    opacity: 0;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+}
+
+.about-text {
+    width: 45%;
+    text-align: right;
+}
+
+.about-text-1 {
+    color: black;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.about-text-2 {
+    color: #4C4C4C;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 4vh;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.about-button {
+    width: 20%;
+    height: 8vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.about-button a {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* about us ends here */
+
+/* services section */
+
+.services-text {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 200px 0px auto;
+    color: black;
+}
+
+.services-box {
+    text-align: center;
+    background: transparent;
+}
+
+.wrapper {
+    display: grid;
+    margin: 100px 90px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.wrapper .box {
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+}
+
+.wrapper .box .front-face {
+    background: #fff;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    transition: all 0.5s ease;
+}
+
+.box .front-face .icon {
+    height: 80px;
+}
+
+.box .front-face .icon i {
+    font-size: 65px;
+}
+
+.box .front-face span, .box .back-face span {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .front-face .icon i, .box .front-face span {
+    background: linear-gradient(-135deg, #50c878, #92d041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box .back-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-135deg, #50c878, #92d041);
+    z-index: 1;
+    height: 220px;
+    width: 100%;
+    padding: 30px;
+    color: #fff;
+    opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: translateY(110px) rotateX(-90deg);
+    transition: all 0.5s ease;
+}
+
+.box .back-face p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.box:hover .back-face {
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+.box:hover .front-face {
+    transform: translateY(-110px) rotateX(90deg);
+    opacity: 0;
+}
+
+/* ..........awards............ */
+
+.awards {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0px auto;
+    background-image: url(../img/b7.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.233);
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+}
+
+.award-1 {
+    width: 22%;
+    height: 23vh;
+    background: transparent;
+    padding: 60px 0px 0px 0px;
+}
+
+.award-1 i, .award-1 h5, .award-1 p {
+    background: linear-gradient(135deg, white 50%, #92d041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.award-1 i, .award-1 p {
+    font-size: 40px;
+    padding: 3px;
+}
+
+.award-1 h5 {
+    font-size: 17px;
+}
+
+/* .............service section .............. */
+
+.service-section {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.main-services-text {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 130px 0px 80px 0px;
+    color: black;
+    text-align: center;
+}
+
+.service-1 {
+    width: 350px;
+    height: 210px;
+    text-align: center;
+    margin: 0px 20px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.service-1 i, .service-1 h2 {
+    font-size: 30px;
+    padding: 3px;
+    background: linear-gradient(-135deg, #50c878, #92d041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-1 h5 {
+    font-size: 14px;
+}
+
+.service-1-front-face {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(3, 3, 3, 0.4);
+    transition: all 1.2s ease;
+    padding: 30px;
+}
+
+.service-1-back-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 10px 0px rgba(7, 7, 7, 0.4);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: translateX(190px) rotateY(100deg);
+    transition: all 1.2s ease;
+}
+
+.service-1:hover .service-1-back-face {
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+.service-1:hover .service-1-front-face {
+    transform: translateX(-180px) rotateY(-100deg);
+    opacity: 0;
+}
+
+.service-1-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* services ends here  */
+
+.carousel-inner {
+    height: 65vh;
+    background-size: cover !important;
+    width: 65% !important;
+    margin-left: 18%;
+}
+
+/* ..............testimonials.............  */
+
+.testimonials {
+    background-image: url(../img/testify.jpg);
+    background-position: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 200vh;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode: color-burn;
+    margin: 100px 0px auto;
+}
+
+.testimonials h1 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    background: linear-gradient(-135deg, #50c878, #92d041, #fff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.testimonial-1, .testimonial-2, .testimonial-3 {
+    display: flex;
+    margin: 50px 0px auto;
+    padding: 0px 30px;
+}
+
+.testimonial-2 {
+    flex-direction: row-reverse;
+}
+
+.testimonial-image {
+    width: 35%;
+    height: 50vh;
+    margin: 0px 20px;
+}
+
+.testimonial-img {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-text {
+    width: 35%;
+    color: white;
+}
+
+.testimonial-text h3 {
+    font-size: 34px;
+    background: linear-gradient(-135deg, #50c878, #92d041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.gallery-text h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 100px 0px 80px 0px;
+    color: black;
+    text-align: center;
+}
+
+.our-team {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.main-team-text {
+    font-size: 40px;
+    text-align: center;
+    margin: 200px 0px auto;
+}
+
+.team-member {
+    width: 22%;
+    height: 450px;
+    padding: 10px 7px;
+    transition: all 1s ease;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.team-image {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.team-text p {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.team-member:hover {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.719);
+}
+
+.team-img:hover .team-image {
+    width: 110%;
+    height: 110%;
+}
+
+/* team ends here  */
+
+/* contact info  */
+
+footer {
+    background: url(../img/footer-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    /* width: 100%; */
+    bottom: 0;
+    margin: 200px 0px 0px 0px;
+}
+
+.cf-bar {
+    width: 100%;
+    display: flex;
+}
+
+.ci-txt-3 {
+    font-size: 35px;
+    opacity: 0.95;
+    padding: 37px;
+    color: white;
+}
+
+.cf-txt {
+    width: 150px;
+    margin-left: 30px;
+    color: white;
+}
+
+.cf-1, .cf-2, .cf-3, .cf-4 {
+    display: flex;
+    padding: 35px;
+}
+
+.cf-home {
+    width: 70px;
+    height: 10vh;
+    background: linear-gradient(-135deg, #50c878, #92d041);
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 9vh;
+}
+
+.cf-txt-1 {
+    font-size: 20px;
+}
+
+.cf-txt-2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 5vh
+}

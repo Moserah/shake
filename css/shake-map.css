@@ -1,0 +1,309 @@
+/*.............. media query............... */
+
+@media screen and (max-width:1024px) {
+    .cf-bar {
+        /* margin-left: 50px; */
+    }
+    .cf-txt-2 {
+        font-size: 15px
+    }
+    .cf-1, .cf-2, .cf-3, .cf-4 {
+        display: flex;
+        /* padding: 30px; */
+    }
+    .cf-txt {
+        width: 110px;
+        margin-left: 20px;
+        color: white;
+    }
+    .cf-home {
+        width: 60px;
+        height: 10vh;
+        font-size: 32px;
+        line-height: 9vh;
+    }
+    .about-button a {
+        font-size: 15px;
+    }
+    .testimonials {
+        height: 210vh;
+    }
+}
+
+@media screen and (max-width:952px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background: linear-gradient(-135deg, #50c878e3, #92d041ef);
+        transition: 0.5s all;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    nav ul li a:hover, nav ul li a.active {
+        background: none;
+        color: rgb(3, 94, 33) !important
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .title-text {
+        margin-left: -213px;
+    }
+    .title-text-1 {
+        font-size: 37px;
+    }
+    .title-text-2 {
+        font-size: 15px;
+    }
+    .title-img {
+        width: 40%;
+        margin: 200px 0px 100px 100px;
+    }
+    #about-wrapper .about-box {
+        width: 320px;
+    }
+    #about-wrapper .about-box .about-front-face {
+        height: 250px;
+        width: 100%;
+    }
+    .about-box .about-back-face {
+        height: 250px;
+        width: 100%;
+    }
+    .about-text-1 {
+        font-size: 40px;
+    }
+    .about-button {
+        width: 24%;
+    }
+    .service-section {
+        display: flex;
+        justify-content: center;
+        height: 550px;
+        flex-wrap: wrap;
+        margin: 100px 0px auto;
+    }
+    .main-services-text {
+        font-size: 30px;
+        text-transform: capitalize;
+        margin: 130px 0px 80px 0px;
+        color: black;
+        text-align: center;
+    }
+    .service-1 {
+        width: 300px;
+        height: 230px;
+        margin: 50px 20px;
+    }
+    .services-text {
+        font-size: 45px;
+        margin: 140px 0px auto;
+    }
+    .service-1 i, .service-1 h2 {
+        font-size: 25px;
+    }
+    .testimonial-text h3 {
+        font-size: 30px;
+    }
+    .testimonial-text-h4 {
+        font-size: 25px;
+    }
+    .our-team {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-text p {
+        font-size: 20px;
+    }
+    .team-member {
+        width: 500px;
+        height: 530px;
+        margin: 100px 0px 0px 0px;
+    }
+    .cf-bar {
+        width: 100%;
+    }
+    .cf-home {
+        width: 50px;
+        height: 8vh;
+        font-size: 28px;
+        line-height: 7.5vh;
+    }
+    .cf-txt-1 {
+        font-size: 17px;
+    }
+    .cf-txt-2 {
+        font-size: 13px;
+        letter-spacing: 0px;
+        line-height: 3vh
+    }
+    .cf-txt {
+        width: 100px;
+        margin-left: 20px;
+    }
+    .cf-1, .cf-2, .cf-3, .cf-4 {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .logo {
+        font-size: 25px;
+    }
+    .checkbtn, .title-text-1 {
+        font-size: 25px;
+    }
+    .title-text {
+        margin-left: -145px;
+    }
+    .title-text-2 {
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+    .title-img {
+        width: 54%;
+        height: 48vh;
+        margin: 200px 0px 100px 14px;
+    }
+    .title-button {
+        width: 120px;
+    }
+    #about-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 1000px;
+        padding: 0px 0px 0px 0px;
+    }
+    .about-text {
+        width: 100%;
+        text-align: center;
+        padding: 3px;
+    }
+    .about-text-1 {
+        font-size: 40px;
+    }
+    #about-wrapper .about-box {
+        width: 400px;
+        margin-top: 50px;
+    }
+    #about-wrapper .about-box .about-front-face {
+        height: 290px;
+        padding: 20px;
+    }
+    .about-box .about-back-face {
+        height: 290px;
+        padding: 20px;
+    }
+    .award-1 i, .award-1 p {
+        font-size: 30px;
+        padding: 1.5px;
+    }
+    .award-1 h5 {
+        font-size: 14px;
+    }
+    .services-text {
+        font-size: 40px;
+        margin: 150px 0px 50px 0px;
+    }
+    .service-section {
+        display: block;
+        margin: 140px 0px auto;
+        height: 700px;
+    }
+    .service-1 {
+        width: 380px;
+        height: 230px;
+        margin: 50px 0px auto;
+    }
+    .wrapper {
+        display: grid;
+        margin: 0px auto;
+        grid-gap: 20px;
+    }
+    .wrapper .box {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .wrapper .box .front-face {
+        height: 200px;
+        width: 100%;
+    }
+    .box .front-face .icon {
+        height: 80px;
+    }
+    .box .front-face .icon i {
+        font-size: 63px;
+    }
+    .box .front-face span, .box .back-face span {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .box .back-face {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #about-wrapper .about-box {
+        width: 350px;
+    }
+    .box .back-face p {
+        font-size: 14px;
+    }
+    .service-1 {
+        width: 320px;
+        height: 230px;
+        margin: 50px 25px auto;
+        /* margin-left: 30px; */
+    }
+}
+
+@media screen and (max-width:566px) {
+    .cf {
+        width: 95%
+    }
+    .cf-txt-1 {
+        font-size: 110%;
+    }
+    .cf-txt-2 {
+        font-size: 80%;
+    }
+    .cf-home {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .cf-home {
+        width: 19%;
+    }
+}
